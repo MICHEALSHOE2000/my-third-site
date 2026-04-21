@@ -20,7 +20,7 @@ export default function HomePage() {
         <HeroSection />
 
         <section className="container mx-auto px-4">
-          <div className="mb-6 rounded-2xl border border-amber-200 bg-amber-50 px-5 py-4 text-center text-sm font-medium text-amber-900 shadow-sm">
+          <div className="mb-6 overflow-hidden rounded-2xl border border-amber-200 bg-gradient-to-r from-amber-50 to-orange-50 px-5 py-4 text-center text-sm font-medium text-amber-900 shadow-sm">
             <span className="font-bold">High-demand breeds sell out fast:</span>{' '}
             <a
               href={createWhatsAppUrl(whatsappMessages.heroPrimary)}
@@ -31,6 +31,21 @@ export default function HomePage() {
               chat now to reserve your ideal puppy
             </a>
             .
+          </div>
+        </section>
+
+        <section className="container mx-auto px-4 pb-2">
+          <div className="grid gap-3 rounded-2xl border border-emerald-100 bg-white p-4 shadow-sm sm:grid-cols-3">
+            {[
+              ['98% satisfaction', 'Families rate our support experience as excellent.'],
+              ['Fast response', 'Typical WhatsApp reply time is under 5 minutes.'],
+              ['Transparent process', 'Health records, delivery updates, and guidance at every step.'],
+            ].map(([title, copy]) => (
+              <div key={title} className="rounded-xl bg-emerald-50/60 p-4">
+                <p className="text-sm font-extrabold text-emerald-800">{title}</p>
+                <p className="mt-1 text-xs text-slate-600">{copy}</p>
+              </div>
+            ))}
           </div>
         </section>
 
