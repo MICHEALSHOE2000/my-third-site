@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "16065078887";
+const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_TEXT_MESSAGE_NUMBER ?? "19543170622";
 
 export const whatsappMessages = {
   headerBanner:

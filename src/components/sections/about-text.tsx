@@ -13,7 +13,7 @@ const pillars = [
   },
   {
     title: "Real support on WhatsApp",
-    text: "Skip forms and waiting. Chat directly with a puppy advisor and get answers in minutes.",
+    text: "Skip forms and waiting. Chat directly with our agent and get answers in minutes.",
   },
 ];
 
